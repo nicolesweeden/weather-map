@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(141, 161, 170);
+    color: rgb(192, 158, 158);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    border: rgb(232, 176, 118) 2px solid;
+    border
+}
+
+h2 {
+    color: rgb(192, 158, 158);
+}
+
+h3 {
+    color: rgb(232, 176, 118);
+}
+
+h4 {
+    color: rgb(238, 203, 173);
+}

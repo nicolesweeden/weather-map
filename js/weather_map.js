@@ -18,3 +18,26 @@ $.get("http://api.openweathermap.org/data/2.5/forecast?lat="+ lat +"&lon="+ long
         console.log(reports[i]);
     }
 });
+
+mapboxgl.accessToken = MAPBOX_APPID;
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9',
+    zoom: 10,
+    center: [-104.9903, 39.7392]
+});
+
+var marker = new mapboxgl.Marker({
+    draggable: true,
+    color: "#c71585"
+})
+    .setLngLat([-104.9893, 39.7372])
+    .addTo(map);
+
+
+// var marker = new mapboxgl.Marker({
+//     draggable: true,
+//     color: "#9E7E44"
+// })
+//     .setLngLat(ll)
+//     .addTo(map);
