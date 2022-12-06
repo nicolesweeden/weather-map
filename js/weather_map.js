@@ -2,7 +2,6 @@
     "use strict";
     $(document).ready(function() {
 
-
 $.get("http://api.openweathermap.org/data/2.5/forecast", {
     APPID: API_KEY,
     q: "Denver, US",
@@ -10,7 +9,6 @@ $.get("http://api.openweathermap.org/data/2.5/forecast", {
 }).done(function(data) {
     console.log('5 day forecast', data);
 });
-
 
 let lat = 39.7392;
 let long = -104.9903;
@@ -21,13 +19,13 @@ $.get("http://api.openweathermap.org/data/2.5/forecast?lat="+ lat +"&lon="+ long
         // should get 5 objects back
         console.log(reports[i]);
         html += "<div id='cards' class='col-md-2'>";
+        html += "<p>Date: " + reports[i].dt_txt + "</p>";
         html += "<p>Current temperature of " + reports[i].main.temp + "°F" + "</p>";
         html += "<p>High of " + reports[i].main.temp_max + "°F" + "</p>";
         html += "<p>Low of " + reports[i].main.temp_min + "°F" + "</p>";
+        html += "<p>Description: " + reports[i].weather[0].description + "</p>";
         html += "</div>";
-
     }
-    // console.log(html);
     $("#container").html(html);
 });
 
@@ -42,11 +40,9 @@ var map = new mapboxgl.Map({
 var marker = new mapboxgl.Marker({
     draggable: true,
     color: "#c71585"
-
 })
     .setLngLat([-104.9893, 39.7372])
     .addTo(map);
-
 
 // End of document ready
 });

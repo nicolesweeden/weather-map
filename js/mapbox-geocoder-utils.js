@@ -1,6 +1,5 @@
 "use strict";
 
-// Geocode
 function geocode(search, token) {
     var baseUrl = 'https://api.mapbox.com';
     var endPoint = '/geocoding/v5/mapbox.places/';
@@ -12,7 +11,6 @@ function geocode(search, token) {
         });
 }
 
-// Reverse geocode
 function reverseGeocode(coordinates, token) {
     var baseUrl = 'https://api.mapbox.com';
     var endPoint = '/geocoding/v5/mapbox.places/';
