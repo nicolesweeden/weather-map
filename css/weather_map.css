@@ -1,24 +1,51 @@
 body {
     background-color: rgb(141, 161, 170);
     color: rgb(192, 158, 158);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: "IBM Plex Serif";
+    background-color: #98AFC7;
+    color: #F8F8FF;
+
 }
 
 #map {
     height: 500px;
     width: 100%;
-    border: rgb(232, 176, 118) 2px solid;
-    border
+    border: #F4A460 2px solid;
 }
 
-h2 {
-    color: rgb(192, 158, 158);
+h1 {
+    color: #F4A460;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
 }
 
-h3 {
-    color: rgb(232, 176, 118);
+.marker {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+}
+
+p {
+    color: #F8B88B;
+}
+
+#cards {
+    border: #F8B88B 2px solid;
+    margin: 10px;
+    float: left;
+    background-color: #3090C7;
+    top: 520px;
+    left: 50px;
 }
 
 h4 {
-    color: rgb(238, 203, 173);
+    text-align: center;
+}
+
+#map {
+    position: absolute;
+    top: 100px;
+    left: 10px;
 }
